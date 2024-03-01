@@ -6,6 +6,7 @@
 #include <pthread.h>
 #include <stdatomic.h>
 #include <inttypes.h>
+#include <stdbool.h>
 
 #include "hashmap.h"
 #include "devmem.h"

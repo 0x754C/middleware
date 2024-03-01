@@ -1,0 +1,10 @@
+ake \
+	PROJECT_FULLNAME=SG200X \
+	BUILD_PATH=$(realpath ./build) \
+	SDK_VER=musl_riscv64 MW_VER=v2 \
+	CROSS_COMPILE=riscv64-unknown-linux-musl-
+	CHIP_ARCH=SG200X KERNEL_DIR=$(realpath ../../linux_5.10) \
+	OSS_TARBALL_PATH=$(realpath oss/oss_release_tarball/musl_riscv64) \
+	OSS_BUILD_SRCIPT=$(realpath oss/run_build.sh) \
+	OUTPUT_DIR=$(realpath ./output) \
+	sensor-y=gcore_gc4653
